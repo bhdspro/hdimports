@@ -4,41 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Título Otimizado para SEO -->
     <title>HD Imports | Produtos Premium: Eletrônicos, Moda e Acessórios</title>
 
-    <!-- Metatags Essenciais de SEO -->
     <meta name="description" content="Descubra na HD Imports uma curadoria exclusiva de produtos premium. De eletrônicos de última geração a moda e acessórios de estilo, garantimos qualidade e exclusividade. Compre agora!">
     <meta name="keywords" content="HD Imports, produtos premium, eletrônicos, moda, acessórios, calçados importados, estilo, londrina, paraná">
     <meta name="author" content="HD Imports">
-    <link rel="canonical" href="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
+    <link rel="canonical" href="https://www.seusite.com.br">
 
-    <!-- Open Graph (para compartilhamento em redes sociais) -->
     <meta property="og:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
     <meta property="og:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
     <meta property="og:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg">
-    <meta property="og:url" content="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
+    <meta property="og:url" content="https://www.seusite.com.br">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Twitter Card (para compartilhamento no Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
     <meta name="twitter:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg">
 
-    <!-- Carrega o Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* Nova Paleta de Cores baseada na Logo */
         :root {
-            --color-primary: #111827; /* Preto/Cinza bem escuro */
-            --color-secondary: #FBBF24; /* Dourado/Ambar */
-            --color-text: #F3F4F6; /* Texto Claro */
-            --color-card-bg: #1F2937; /* Fundo dos cards (um tom acima do fundo) */
+            --color-primary: #111827;
+            --color-secondary: #FBBF24;
+            --color-text: #F3F4F6;
+            --color-card-bg: #1F2937;
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -49,7 +43,7 @@
             transition: all 0.2s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             background-color: var(--color-secondary);
-            color: #111827; /* Texto escuro no botão para contraste */
+            color: #111827;
         }
         .shopee-button:hover {
             transform: translateY(-2px);
@@ -99,20 +93,11 @@
 </head>
 <body class="antialiased min-h-screen">
 
-    <header class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center">
-            <a href="#" class="text-3xl font-extrabold tracking-tight text-white">
-                HD <span class="highlight-color">Imports</span>
-            </a>
-        </div>
-    </header>
+    <section>
+        <img src="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg" alt="Logo HD Imports" class="w-full object-cover">
+    </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <!-- Seção da Logo -->
-        <section class="mb-12 flex justify-center px-4">
-             <!-- [Imagem da Logo da HD Imports] -->
-            <img src="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg" alt="Logo HD Imports" class="rounded-lg shadow-2xl max-w-2xl w-full object-cover">
-        </section>
         
         <section class="text-center mb-12">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
@@ -162,7 +147,7 @@
                             <div>
                                 <div class="mb-4 text-center md:text-left whitespace-nowrap">
                                      <span class="text-lg text-gray-400 line-through align-middle">DE R$ 199,90</span>
-                                     <span class="text-2xl font-black highlight-color align-middle ml-2">HOJE POR APENAS</span>
+                                     <span class="text-xl font-black highlight-color align-middle ml-2">HOJE POR APENAS</span>
                                 </div>
                                 
                                 <a 
@@ -205,7 +190,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // --- Carrossel de Imagens ---
             const images = [
                 'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png',
                 'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(2).png',
@@ -250,7 +234,6 @@
                 carouselItems[currentImageIndex].classList.add('active');
             }
 
-            // --- Contadores de Escassez ---
             let estoque = 7;
             let compras = 28;
             const minEstoque = 3;
@@ -278,7 +261,6 @@
                 }
             }
 
-            // --- Sincronizar link da imagem com o botão ---
             function syncProductLink() {
                 const productButton = document.getElementById('main-product-link');
                 const imageContainerLink = document.getElementById('product-carousel');
@@ -289,7 +271,6 @@
                 }
             }
 
-            // --- Inicialização ---
             initCarousel();
             syncProductLink();
             updateCounters();
@@ -298,9 +279,4 @@
     </script>
 </body>
 </html>
-
-
-
-
-
 
