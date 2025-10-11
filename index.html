@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Título Otimizado para SEO (Mais Amplo) -->
+    <!-- Título Otimizado para SEO -->
     <title>HD Imports | Produtos Premium: Eletrônicos, Moda e Acessórios</title>
 
-    <!-- Metatags Essenciais de SEO (Atualizados) -->
+    <!-- Metatags Essenciais de SEO -->
     <meta name="description" content="Descubra na HD Imports uma curadoria exclusiva de produtos premium. De eletrônicos de última geração a moda e acessórios de estilo, garantimos qualidade e exclusividade. Compre agora!">
     <meta name="keywords" content="HD Imports, produtos premium, eletrônicos, moda, acessórios, calçados importados, estilo, londrina, paraná">
     <meta name="author" content="HD Imports">
     <link rel="canonical" href="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
 
-    <!-- Open Graph (Atualizado para ser mais genérico) -->
+    <!-- Open Graph (para compartilhamento em redes sociais) -->
     <meta property="og:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
     <meta property="og:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg">
     <meta property="og:url" content="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Twitter Card (Atualizado para ser mais genérico) -->
+    <!-- Twitter Card (para compartilhamento no Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
     <meta name="twitter:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg">
 
     <!-- Carrega o Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,12 +33,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
     <style>
-        /* Configura a fonte Inter e cores de base */
+        /* Nova Paleta de Cores baseada na Logo */
         :root {
-            --color-primary: #1F2937; /* Cinza Escuro / Navy para fundo */
-            --color-secondary: #FDE047; /* Amarelo Vibrante para Destaque */
+            --color-primary: #111827; /* Preto/Cinza bem escuro */
+            --color-secondary: #FBBF24; /* Dourado/Ambar */
             --color-text: #F3F4F6; /* Texto Claro */
-            --color-card-bg: #374151; /* Fundo dos cards */
+            --color-card-bg: #1F2937; /* Fundo dos cards (um tom acima do fundo) */
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -48,11 +48,13 @@
         .shopee-button {
             transition: all 0.2s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-secondary);
+            color: #111827; /* Texto escuro no botão para contraste */
         }
         .shopee-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-            background-color: #FACC15; /* Amarelo mais escuro no hover */
+            box-shadow: 0 6px 10px rgba(251, 191, 36, 0.2);
+            filter: brightness(1.1);
         }
         .carousel-item {
             background-size: cover;
@@ -90,24 +92,32 @@
         .whatsapp-button:hover {
             transform: scale(1.1);
         }
+        .highlight-color {
+            color: var(--color-secondary);
+        }
     </style>
 </head>
 <body class="antialiased min-h-screen">
 
-    <header class="sticky top-0 z-50 bg-gray-800/90 backdrop-blur-sm shadow-lg">
+    <header class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center">
             <a href="#" class="text-3xl font-extrabold tracking-tight text-white">
-                HD <span class="text-yellow-400">Imports</span>
+                HD <span class="highlight-color">Imports</span>
             </a>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <!-- Seção da Logo -->
+        <section class="mb-12 flex justify-center px-4">
+             <!-- [Imagem da Logo da HD Imports] -->
+            <img src="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/logo.jpg" alt="Logo HD Imports" class="rounded-lg shadow-2xl max-w-2xl w-full object-cover">
+        </section>
+        
         <section class="text-center mb-12">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
-                HD Imports: Estilo Premium, <span class="text-yellow-400">Qualidade que se Vê.</span>
+                HD Imports: Estilo Premium, <span class="highlight-color">Qualidade que se Vê.</span>
             </h1>
-            <!-- Texto principal atualizado para ser mais abrangente -->
             <p class="text-lg text-gray-400 max-w-3xl mx-auto">
                 Chega de mais do mesmo. Aqui na HD Imports, cada item é selecionado a dedo para garantir o estilo e a qualidade que você merece. De eletrônicos de ponta a peças de moda exclusivas, nós entendemos do assunto.
             </p>
@@ -117,12 +127,12 @@
             <h2 class="text-3xl font-bold mb-8 text-center text-white">Nosso Destaque</h2>
             
             <div class="grid grid-cols-1 gap-8">
-                <div class="bg-gray-700 rounded-xl shadow-2xl overflow-hidden hover:shadow-yellow-500/20 transition-all duration-300 transform hover:scale-[1.01] max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-xl shadow-2xl overflow-hidden hover:shadow-amber-500/20 transition-all duration-300 transform hover:scale-[1.01] max-w-4xl mx-auto">
                     <div class="p-6 md:flex md:space-x-8 md:items-stretch">
                         
                         <div class="md:w-1/2 flex flex-col">
-                            <h3 class="md:hidden text-xl font-semibold mb-2 text-yellow-400">Tênis Esportivo Premium</h3>
-                            <a id="product-carousel" href="#" target="_blank" rel="noopener noreferrer" class="cursor-pointer bg-gray-600 rounded-lg flex items-center justify-center overflow-hidden relative w-full aspect-square">
+                            <h3 class="md:hidden text-xl font-semibold mb-2 highlight-color">Tênis Esportivo Premium</h3>
+                            <a id="product-carousel" href="#" target="_blank" rel="noopener noreferrer" class="cursor-pointer bg-gray-700 rounded-lg flex items-center justify-center overflow-hidden relative w-full aspect-square">
                                 <div class="absolute top-2 left-2 z-10 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                                     -44% OFF
                                 </div>
@@ -131,17 +141,17 @@
 
                         <div class="md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
                             <div>
-                                <h3 class="hidden md:block text-2xl font-extrabold mb-2 text-yellow-400">Tênis Esportivo Premium</h3>
+                                <h3 class="hidden md:block text-2xl font-extrabold mb-2 highlight-color">Tênis Esportivo Premium</h3>
                                 <div class="flex-grow">
                                     <p class="text-base text-gray-300 mb-4 font-light italic">
                                         Leve sua atitude ao extremo! O calçado perfeito para a academia e o dia a dia, combinando estilo irreverente e amortecimento premium.
                                     </p>
                                     <div class="flex flex-col space-y-2 mb-4 text-sm">
-                                        <div class="flex items-center space-x-2 text-red-400 font-bold bg-gray-800 p-2 rounded-lg shadow-md">
+                                        <div class="flex items-center space-x-2 text-red-400 font-bold bg-gray-900 p-2 rounded-lg shadow-md">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                             <span>Restam <span id="estoque-restante" class="font-black">7</span> unidades. Compre agora!</span>
                                         </div>
-                                        <div class="flex items-center space-x-2 text-green-400 font-bold bg-gray-800 p-2 rounded-lg shadow-md">
+                                        <div class="flex items-center space-x-2 text-green-400 font-bold bg-gray-900 p-2 rounded-lg shadow-md">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                                             <span><span id="compras-recentes" class="font-black">28</span> pessoas compraram nas últimas 24h.</span>
                                         </div>
@@ -152,7 +162,7 @@
                             <div>
                                 <div class="mb-4 text-center md:text-left whitespace-nowrap">
                                      <span class="text-lg text-gray-400 line-through align-middle">DE R$ 199,90</span>
-                                     <span class="text-2xl font-black text-yellow-400 align-middle ml-2">HOJE POR APENAS</span>
+                                     <span class="text-2xl font-black highlight-color align-middle ml-2">HOJE POR APENAS</span>
                                 </div>
                                 
                                 <a 
@@ -160,7 +170,7 @@
                                     href="https://shopee.com.br/product/348623031/22994277262" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    class="shopee-button w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-bold rounded-lg text-gray-900 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 focus:ring-offset-gray-700 uppercase tracking-wider shadow-xl"
+                                    class="shopee-button w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 focus:ring-offset-gray-800 uppercase tracking-wider"
                                     onclick="console.log('Redirecionando para: https://shopee.com.br/product/348623031/22994277262 (Seu cookie será marcado)');"
                                 >
                                     VER PREÇO COM DESCONTO
@@ -218,7 +228,6 @@
                 carouselContainer.innerHTML = '';
                 if(offTag) carouselContainer.appendChild(offTag);
 
-
                 images.forEach((url) => {
                     const itemDiv = document.createElement('div');
                     itemDiv.className = 'carousel-item';
@@ -264,8 +273,8 @@
                 comprasEl.textContent = compras;
                 
                 if (estoque <= 5) {
-                   estoqueEl.parentElement.classList.remove('text-red-400');
-                   estoqueEl.parentElement.classList.add('text-yellow-500');
+                   estoqueEl.parentElement.parentElement.classList.remove('text-red-400');
+                   estoqueEl.parentElement.parentElement.classList.add('text-yellow-500');
                 }
             }
 
@@ -289,4 +298,9 @@
     </script>
 </body>
 </html>
+
+
+
+
+
 
