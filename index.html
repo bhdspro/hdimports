@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título Otimizado para SEO (Mais Amplo) -->
+    <title>HD Imports | Produtos Premium: Eletrônicos, Moda e Acessórios</title>
+
+    <!-- Metatags Essenciais de SEO (Atualizados) -->
+    <meta name="description" content="Descubra na HD Imports uma curadoria exclusiva de produtos premium. De eletrônicos de última geração a moda e acessórios de estilo, garantimos qualidade e exclusividade. Compre agora!">
+    <meta name="keywords" content="HD Imports, produtos premium, eletrônicos, moda, acessórios, calçados importados, estilo, londrina, paraná">
+    <meta name="author" content="HD Imports">
+    <link rel="canonical" href="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
+
+    <!-- Open Graph (Atualizado para ser mais genérico) -->
+    <meta property="og:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
+    <meta property="og:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png">
+    <meta property="og:url" content="https://www.seusite.com.br"> <!-- Substitua pelo seu domínio real -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card (Atualizado para ser mais genérico) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HD Imports: Estilo Premium, Qualidade que se Vê.">
+    <meta name="twitter:description" content="Uma curadoria exclusiva de eletrônicos, moda e acessórios premium. Qualidade e estilo garantidos.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png">
+
+    <!-- Carrega o Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Configura a fonte Inter e cores de base */
+        :root {
+            --color-primary: #1F2937; /* Cinza Escuro / Navy para fundo */
+            --color-secondary: #FDE047; /* Amarelo Vibrante para Destaque */
+            --color-text: #F3F4F6; /* Texto Claro */
+            --color-card-bg: #374151; /* Fundo dos cards */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-text);
+        }
+        .shopee-button {
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .shopee-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            background-color: #FACC15; /* Amarelo mais escuro no hover */
+        }
+        .carousel-item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .carousel-item.active {
+            opacity: 1;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-gray-800/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center">
+            <a href="#" class="text-3xl font-extrabold tracking-tight text-white">
+                HD <span class="text-yellow-400">Imports</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
+                HD Imports: Estilo Premium, <span class="text-yellow-400">Qualidade que se Vê.</span>
+            </h1>
+            <!-- Texto principal atualizado para ser mais abrangente -->
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                Chega de mais do mesmo. Aqui na HD Imports, cada item é selecionado a dedo para garantir o estilo e a qualidade que você merece. De eletrônicos de ponta a peças de moda exclusivas, nós entendemos do assunto.
+            </p>
+        </section>
+
+        <section id="produtos" class="mt-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Nosso Destaque</h2>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <div class="bg-gray-700 rounded-xl shadow-2xl overflow-hidden hover:shadow-yellow-500/20 transition-all duration-300 transform hover:scale-[1.01] max-w-4xl mx-auto">
+                    <div class="p-6 md:flex md:space-x-8 md:items-stretch">
+                        
+                        <div class="md:w-1/2 flex flex-col">
+                            <h3 class="md:hidden text-xl font-semibold mb-2 text-yellow-400">Tênis Esportivo Premium</h3>
+                            <a id="product-carousel" href="#" target="_blank" rel="noopener noreferrer" class="cursor-pointer bg-gray-600 rounded-lg flex items-center justify-center overflow-hidden relative w-full aspect-square">
+                                <div class="absolute top-2 left-2 z-10 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                                    -44% OFF
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
+                            <div>
+                                <h3 class="hidden md:block text-2xl font-extrabold mb-2 text-yellow-400">Tênis Esportivo Premium</h3>
+                                <div class="flex-grow">
+                                    <p class="text-base text-gray-300 mb-4 font-light italic">
+                                        Leve sua atitude ao extremo! O calçado perfeito para a academia e o dia a dia, combinando estilo irreverente e amortecimento premium.
+                                    </p>
+                                    <div class="flex flex-col space-y-2 mb-4 text-sm">
+                                        <div class="flex items-center space-x-2 text-red-400 font-bold bg-gray-800 p-2 rounded-lg shadow-md">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                            <span>Restam <span id="estoque-restante" class="font-black">7</span> unidades. Compre agora!</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2 text-green-400 font-bold bg-gray-800 p-2 rounded-lg shadow-md">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                            <span><span id="compras-recentes" class="font-black">28</span> pessoas compraram nas últimas 24h.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4 text-center md:text-left whitespace-nowrap">
+                                     <span class="text-lg text-gray-400 line-through align-middle">DE R$ 199,90</span>
+                                     <span class="text-2xl font-black text-yellow-400 align-middle ml-2">HOJE POR APENAS</span>
+                                </div>
+                                
+                                <a 
+                                    id="main-product-link"
+                                    href="https://shopee.com.br/product/348623031/22994277262" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="shopee-button w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-bold rounded-lg text-gray-900 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 focus:ring-offset-gray-700 uppercase tracking-wider shadow-xl"
+                                    onclick="console.log('Redirecionando para: https://shopee.com.br/product/348623031/22994277262 (Seu cookie será marcado)');"
+                                >
+                                    VER PREÇO COM DESCONTO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="whatsapp-float">
+        <a 
+            href="https://api.whatsapp.com/send?phone=5543988582822&text=Ol%C3%A1%2C%20estou%20no%20seu%20site%20HD%20Imports%20e%20preciso%20de%20ajuda!%20Voc%C3%AA%20pode%20me%20ajudar%3F" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="whatsapp-button"
+            aria-label="Fale conosco pelo WhatsApp"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+                <path d="M12.031 2.5C7.307 2.5 3.5 6.307 3.5 11.031c0 1.785.52 3.454 1.42 4.887L4 21.01l5.132-1.341c1.4.379 2.923.585 4.099.585 4.724 0 8.531-3.807 8.531-8.531S16.755 2.5 12.031 2.5zM17.152 15.341l-.409.239c-.198.114-.403.228-.616.335-.119.06-.242.12-.365.176l-.608.271c-.13.057-.272.086-.412.086-.299 0-.583-.119-.798-.324l-.155-.155c-.173-.172-.257-.404-.257-.636l.035-.192c.074-.4.153-.8.232-1.2.062-.295.127-.588.196-.879.025-.113.037-.233.037-.353 0-.25-.098-.485-.276-.662l-.248-.248c-.287-.287-.665-.445-1.07-.445-.078 0-.156.009-.234.027-.354.083-.711.166-1.07.248-.4.093-.787.14-1.168.14-.144 0-.294-.035-.436-.104-.268-.135-.5-.316-.694-.528l-.137-.138c-.194-.213-.377-.442-.56-.677-.074-.094-.15-.187-.225-.281-.177-.22-.35-.444-.514-.668-.05-.067-.105-.128-.155-.194-.247-.323-.424-.712-.51-1.127l-.022-.119c-.066-.356.037-.71.305-.978l.39-.391c.205-.205.474-.316.742-.316.14 0 .285.034.425.103.267.13.487.31.677.525l.138.138c.18.194.39.387.618.577.068.058.143.116.219.173.228.17.473.332.73.484.075.045.156.088.24.129.213.107.44.185.679.227.15.025.305.04.464.04.283 0 .548-.109.743-.304l.432-.432c.323-.323.754-.499 1.192-.499.438 0 .869.176 1.192.499l.432.432c.196.196.305.46.305.742 0 .438-.176.869-.499 1.192l-.155-.155c-.213.213-.394.484-.528.798l-.104.298c-.147.41-.22.825-.22 1.229 0 .466.11.916.326 1.328l.192.352z"/>
+            </svg>
+        </a>
+    </div>
+
+    <footer class="bg-gray-800 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 HD Imports. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Carrossel de Imagens ---
+            const images = [
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(1).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(2).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(3).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(4).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(5).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(6).png',
+                'https://raw.githubusercontent.com/bhdspro/hdimports/main/image/produto_588%20(7).png'
+            ];
+
+            let currentImageIndex = 0;
+            const carouselIntervalTime = 3000;
+            let carouselItems = [];
+
+            function initCarousel() {
+                const carouselContainer = document.getElementById('product-carousel');
+                if (!carouselContainer || images.length === 0) return;
+                
+                const offTag = carouselContainer.querySelector('.absolute');
+                carouselContainer.innerHTML = '';
+                if(offTag) carouselContainer.appendChild(offTag);
+
+
+                images.forEach((url) => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'carousel-item';
+                    itemDiv.style.backgroundImage = `url('${url}')`;
+                    carouselContainer.appendChild(itemDiv);
+                    carouselItems.push(itemDiv);
+                });
+
+                if (carouselItems.length > 0) {
+                    carouselItems[0].classList.add('active');
+                    setInterval(showNextImage, carouselIntervalTime); 
+                }
+            };
+
+            function showNextImage() {
+                if (carouselItems.length === 0) return;
+
+                carouselItems[currentImageIndex].classList.remove('active');
+                currentImageIndex = (currentImageIndex + 1) % carouselItems.length;
+                carouselItems[currentImageIndex].classList.add('active');
+            }
+
+            // --- Contadores de Escassez ---
+            let estoque = 7;
+            let compras = 28;
+            const minEstoque = 3;
+
+            function updateCounters() {
+                const estoqueEl = document.getElementById('estoque-restante');
+                const comprasEl = document.getElementById('compras-recentes');
+
+                if (!estoqueEl || !comprasEl) return;
+
+                if (Math.random() > 0.6 && estoque > minEstoque) {
+                    estoque--;
+                }
+                
+                if (Math.random() > 0.4) {
+                    compras += Math.floor(Math.random() * 2) + 1;
+                }
+
+                estoqueEl.textContent = estoque;
+                comprasEl.textContent = compras;
+                
+                if (estoque <= 5) {
+                   estoqueEl.parentElement.classList.remove('text-red-400');
+                   estoqueEl.parentElement.classList.add('text-yellow-500');
+                }
+            }
+
+            // --- Sincronizar link da imagem com o botão ---
+            function syncProductLink() {
+                const productButton = document.getElementById('main-product-link');
+                const imageContainerLink = document.getElementById('product-carousel');
+
+                if (productButton && imageContainerLink) {
+                    const link = productButton.href;
+                    imageContainerLink.href = link;
+                }
+            }
+
+            // --- Inicialização ---
+            initCarousel();
+            syncProductLink();
+            updateCounters();
+            setInterval(updateCounters, 5000 + Math.random() * 2000);
+        });
+    </script>
+</body>
+</html>
+
